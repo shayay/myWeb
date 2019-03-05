@@ -1,0 +1,209 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div id="menu">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#photos">My Photos</a></li>
+        <li><a href="#playlist">My Playlist</a></li>
+        <li><a href="#like">Like</a></li>
+        <li><a href="#qrcoder">QR code</a></li>
+        <li><a href="#spa">Q&A</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+    </div>
+
+    <section id="about" class="section">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <P>
+            <FONT COLOR="red" SIZE="+1" FACE="Times">
+                my name is uzumaki naruto
+                <br />
+                my goal in life is becomming the next hokage.
+                <br />
+                my hobbis are eating rammen and having fan with my friends.
+                <br />
+            </FONT>
+        </P>
+        <br />
+    </section>
+
+    <section id="photos" class="section">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <img src=img1.jpg width=150 height=150 />
+        <br />
+        <img src=img3.jpg width=150 height=150 />
+        <br />
+        <img src=img22.jpg width=150 height=150 />
+        <br />
+        <br />
+        <br />
+    </section>
+
+    <section id="playlist" class="section">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HQ0kEKKRWzk/videoseries?list=PLF7A13C44809B5893" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br />
+        <br />
+        <br />
+    </section>
+
+    <section id="like" class="section">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div id="fb-root"></div>
+        <!-- Your like button code -->
+        <div class="fb-like"
+             data-href="file:///C:/Users/yonatan/Desktop/%D7%A2%D7%91%D7%95%D7%93%D7%94%201/HTMLPage1.html"
+             data-layout="standard"
+             data-action="like"
+             data-show-faces="true">
+        </div>
+        <br />
+        <br />
+        <br />
+    </section>
+
+    <section id="qrcoder" class="section">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        scan my code
+        <br />
+        <br />
+        <br />
+    </section>
+
+    <section id="spa" class="section">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        ans
+        <br />
+        <br />
+        <br />
+    </section>
+
+    <section id="contact" class="section">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        contact me
+        <br />
+        <br />
+        <br />
+    </section>
+
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#nav a").click(function (e) {
+                e.preventDefault();
+                $('html,body').scrollTo(this.hash, this.hash);
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).scroll(function () {
+            $('#menu').toggle($(this).scrollTop() > 1000)
+        });
+    </script>
+</body>
+</html>
