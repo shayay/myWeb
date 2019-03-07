@@ -4,16 +4,26 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-    
-    <div  id="menu" align="center">
-        <a href="#about">About Me</a></li>
-        <a href="#photos">My Photos</a></li>
-        <a href="#playlist">My Playlist</a></li>
-        <a href="#like">Like</a></li>
-        <a href="#qrcoder">QR code</a></li>
-        <a href="#spa">Q&A</a></li>
-        <a href="#contact">Contact Me</a></li>
-    </div>
+  <header>
+        <div  class="manu" id="menu" align="center">
+            <ul>
+                <a href="#about"><Font SIZE="+3"> About Me </Font></a></li>
+                <a href="#"><Font SIZE="+3"> | </Font></a></li>
+                <a href="#photos"><Font SIZE="+3">My Photos</Font></a></li>
+                <a href="#"><Font SIZE="+3"> | </Font></a></li>
+                <a href="#playlist"><Font SIZE="+3">My Playlist</Font></a></li>
+                <a href="#"><Font SIZE="+3"> | </Font></a></li>
+                <a href="#like"><Font SIZE="+3">Like</Font></a></li>
+                <a href="#"><Font SIZE="+3"> | </Font></a></li>
+                <a href="#qrcoder"><Font SIZE="+3">QR code</Font></a></li>
+                <a href="#"><Font SIZE="+3"> | </Font></a></li>
+                <a href="#spa"><Font SIZE="+3">Q&A</Font></a></li>
+                <a href="#"><Font SIZE="+3"> | </Font></a></li>
+                <a href="#contact"><Font SIZE="+3">Contact Me</Font></a></li>
+            </ul>
+        </div>
+        
+  </header>
 
     <section id="about" class="section">
         <br />
@@ -29,7 +39,7 @@
         <H1 align="center">about me</H1>
         <br />
         <P align="center">
-            <FONT  COLOR="red" SIZE="+1" FACE="Times">
+            <FONT  COLOR="red" SIZE="+10" FACE="Times">
                 my name is uzumaki naruto
                 <br />
                 my goal in life is becomming the next hokage.
@@ -61,11 +71,9 @@
         <br />
         <P align="center">
         <br />
-        <img src=img1.png width=150 height=150 />
-        <br />
-        <img src=img3.png width=150 height=150 />
-        <br />
-        <img src=img22.png width=150 height=150 />
+        <img src=img1.png width=300 height=300 />
+        <img src=img3.png width=300 height=300 />
+        <img src=img22.png width=300 height=300 />
         <br />
         <br />
     </P>
@@ -95,11 +103,7 @@
     </section>
 
     <section id="like" class="section">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+       
         <br />
         <br />
         <br />
@@ -110,11 +114,7 @@
         <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fshayay.github.io%2FmyWeb%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
         <br />
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+    
         <div id="fb-root"></div>
         <!-- Your like button code -->
         <div class="fb-like"
@@ -132,25 +132,11 @@
     <section id="qrcoder" class="section">
         <br />
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
         <H1 align="center">qrcoder</H1>
         <br />
         <P align="center">
         <br />
         <img src=code.PNG width=150 height=150 />
-        <br />
-        <br />
     </P>
         <br />
         <br />
@@ -163,6 +149,7 @@
         <br />
         <br />
         <br />
+        <H1 align="center">aswer</H1>
         <br />
         <br />
         <br />
@@ -172,8 +159,6 @@
         <br />
         <br />
         <br />
-        <br />
-        ans
         <br />
         <br />
         <br />
@@ -197,23 +182,19 @@
         <br />
         <H1 align="center">contact</H1>
         <br />
-        <P align="center">
         <br />
-        <h2>Send e-mail to someone@example.com:</h2>
-
-<form action="mailto:someone@example.com" method="post" enctype="text/plain">
-Name:<br>
-<input type="text" name="name"><br>
-E-mail:<br>
-<input type="text" name="mail"><br>
-Comment:<br>
-<input type="text" name="comment" size="50"><br><br>
-<input type="submit" value="Send">
-<input type="reset" value="Reset">
-</form>
+        <form align="center" action="mailto:someone@example.com" method="post" enctype="text/plain">
+        Name:<br>
+        <input type="text" name="name"><br>
+        E-mail:<br>
+        <input type="text" name="mail"><br>
+        Comment:<br>
+        <input type="text" name="comment" size="50"><br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+        </form>
         <br />
         <br />
-    </P>
         <br />
     </section>
 
@@ -222,7 +203,7 @@ Comment:<br>
     
     <script type="text/javascript">
         $(function () {
-            $("#nav a").click(function (e) {
+            $("#menu a").click(function (e) {
                 e.preventDefault();
                 $('html,body').scrollTo(this.hash, this.hash);
             });
