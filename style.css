@@ -1,16 +1,36 @@
-#menu
-{
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: rgb(240, 1, 41);
-}
+
 
 body {
-background-color: pink;
+    background-image:url('https://media.giphy.com/media/AS4ofAlOOYdeE/giphy.gif');
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    height:100%;
+	width:100%;
+	margin: 0;
+    padding: 0;
 }
+
+.manu ul {
+	width:100%;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	background-color: rgb(89, 82, 105);
+	text-align: center;
+  }
+   
+  .manu a {
+	text-decoration: none;
+	color: rgb(206, 69, 15);
+	display: inline-block;
+	transition: .3s background-color;
+  }
+   
+  .manu a:hover {
+	background-color: #2092a7;
+  }
+
 H1 {
     background-color: burlywood;
     }
-    
-   
