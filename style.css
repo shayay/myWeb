@@ -3,7 +3,7 @@
 	position: fixed;
 	width: 100%;
 	height: 35px;
-	background: pink;
+	background: rgb(240, 1, 41);
 }
 
 body {
@@ -12,4 +12,5 @@ background-color: pink;
 H1 {
     background-color: burlywood;
     }
+    
    
